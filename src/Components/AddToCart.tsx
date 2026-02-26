@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import UserContext from '../Context/UserContext'
 import { FaBasketShopping } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';

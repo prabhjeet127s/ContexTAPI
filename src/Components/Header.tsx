@@ -1,7 +1,6 @@
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { IoReorderThreeOutline } from "react-icons/io5";
-import Sidebar from './Sidebar';
+
 import UserContext from '../Context/UserContext';
 import { CiShoppingCart } from "react-icons/ci";
 

@@ -1,12 +1,9 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import UserContext from '../Context/UserContext'
-import { useNavigate } from 'react-router-dom';
 import { Toaster, toast } from 'react-hot-toast';
 
 const Product = () => {
 
-
-  const navigate = useNavigate()
   const { product, addcart, setaddcart } = useContext(UserContext);
 
 
