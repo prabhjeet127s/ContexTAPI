@@ -2,8 +2,10 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>
-      home
+    <div className=' flex justify-center items-center'>
+      <h3 className='text-4xl' >
+      NO DATA
+      </h3>
     </div>
   )
 }

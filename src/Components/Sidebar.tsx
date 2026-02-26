@@ -11,18 +11,16 @@ const Sidebar = () => {
 
   return (
     <>
-      
-      <div className={`sm:hidden  ${sidebaropen?"bg-no":"bg-gray-600" } text-white p-4`}>
+      <div className={` md:hidden lg:hidden ${sidebaropen?"bg-no":"bg-gray-600" } text-white p-4`}>
         <button onClick={() => setsidebaropen(true)}>
           <IoReorderThreeOutline size={30} />
         </button>
       </div>
 
-
       <div
         className={`fixed top-0 left-0 h-full w-60 bg-gray-600 shadow-lg transform transition-transform duration-300 
         ${sidebaropen? "translate-x-0" : "-translate-x-full"} 
-        sm:hidden`}
+       md:hidden lg:hidden `}
       >
         <div className="p-4">
           <button onClick={() => setsidebaropen(false)}>

@@ -10,6 +10,7 @@ import Contact from './Components/Contact'
 import Header from './Components/Header'
 import Sidebar from './Components/Sidebar'
 import UserContextProvider from './Context/UserContextProvider'
+import AddToCart from './Components/AddToCart'
 
 
 function App() {
@@ -20,16 +21,13 @@ function App() {
     <UserContextProvider>
       <Header/>
       <Sidebar/>
-
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Product-list' element={<Product />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path='/add-to-cart' element={<AddToCart/>}/>
       </Routes>
     </UserContextProvider>
-      
-
-  
     </>
   )
 }
