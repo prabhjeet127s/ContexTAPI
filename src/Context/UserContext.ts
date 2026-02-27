@@ -16,7 +16,7 @@ type UserContextType = {
   setaddcart: React.Dispatch<React.SetStateAction<Product[]>>;
 };
 
-const UserContext = createContext<UserContextType | null>(null);
+const UserContext = createContext<any>(null);
 
 export default UserContext;
 

@@ -1,10 +1,12 @@
 import { useContext } from 'react'
 import UserContext from '../Context/UserContext'
 import { Toaster, toast } from 'react-hot-toast';
+import { Link } from 'react-router-dom';
 
 const Product = () => {
 
   const { product, addcart, setaddcart } = useContext(UserContext);
+  console.log(product)
 
 
   const handleonclick = (item) => {
@@ -16,11 +18,14 @@ const Product = () => {
       toast.success("Added to Cart")
 
     }
+    
   }
+
   return (
     <>
 
       <div className="grid md:grid-cols-3  sm:grid-cols-1 gap-6 p-6">
+        
         {product.map((item) => (
           <div key={item.id} className='bg-white shadow-md rounded-xl p-4 hover:shadow-xl transition duration-300' >
             <div className=" position relative overflow-y-auto h-60 overflow-x-hidden ">
